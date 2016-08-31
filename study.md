@@ -39,7 +39,7 @@ As it makes sense to you please write the following in JSON format:
 
 ```json
   {"Jason": {
-    "cat": "Mr. Kitty",
+
     "roomates": [
       {"name": "Dave"},
       {"name": "Miller"}
@@ -63,25 +63,20 @@ already wrote and include the information about Dave's fish.
 ```json
 <!-- your answer here -->
 {"Jason": {
-  "pets": [
-    {
-      "name": "Mr Kitty",
-      "type": "cat"
-    },
-    {
-      "name": "Bob",
-      "type": "goldfish",
-      "color": "red"
-    },
-    {
-      "name": "Mr. MagicNibbles",
-      "type": "goldfish",
-      "color": "yellow",
-      "notes": "bites a bit"
-    }
-  ],
+  "cat": "Mr. Kitty",
   "roomates": [
-    {"name": "Dave"},
+    {"name": "Dave", 
+     "fish" : [
+        {
+          "name": "Bob",
+          "color": "red"
+        },
+        {
+          "name": "Mr. MagicNibbles",
+          "color": "yellow",
+          "notes": "bites a bit"
+        }]
+      },
     {"name": "Miller"}
   ],
   "favorite teams": [
